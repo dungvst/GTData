@@ -1,0 +1,8 @@
+E:\Works\GenerateData\GData\GData\GDataSource\bin\Debug\GDataSource.exe.config
+E:\Works\GenerateData\GData\GData\GDataSource\bin\Debug\GDataSource.exe
+E:\Works\GenerateData\GData\GData\GDataSource\bin\Debug\GDataSource.pdb
+E:\Works\GenerateData\GData\GData\GDataSource\obj\Debug\GDataSource.csprojResolveAssemblyReference.cache
+E:\Works\GenerateData\GData\GData\GDataSource\obj\Debug\GDataSource.Properties.Resources.resources
+E:\Works\GenerateData\GData\GData\GDataSource\obj\Debug\GDataSource.csproj.GenerateResource.Cache
+E:\Works\GenerateData\GData\GData\GDataSource\obj\Debug\GDataSource.exe
+E:\Works\GenerateData\GData\GData\GDataSource\obj\Debug\GDataSource.pdb
