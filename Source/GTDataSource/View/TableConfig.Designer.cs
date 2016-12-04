@@ -28,17 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.cbbGenMethod = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dgvSelectTable = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSelectTable)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -56,84 +55,84 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(101, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(97, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Data Type";
+            this.label2.Text = "Generation method";
             // 
-            // comboBox1
+            // cbbGenMethod
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Automatic",
-            "Manual"});
-            this.comboBox1.Location = new System.Drawing.Point(224, 110);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(157, 21);
-            this.comboBox1.TabIndex = 2;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
-            this.listView1.Location = new System.Drawing.Point(104, 188);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(703, 268);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.cbbGenMethod.AllowDrop = true;
+            this.cbbGenMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbGenMethod.FormattingEnabled = true;
+            this.cbbGenMethod.Location = new System.Drawing.Point(224, 110);
+            this.cbbGenMethod.Name = "cbbGenMethod";
+            this.cbbGenMethod.Size = new System.Drawing.Size(157, 21);
+            this.cbbGenMethod.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(732, 495);
+            this.button1.Location = new System.Drawing.Point(652, 541);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(132, 37);
             this.button1.TabIndex = 4;
             this.button1.Text = "Generate";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Table 1";
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Table 2";
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Relationship";
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Quantity";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(101, 158);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(3, 21);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 13);
+            this.label3.Size = new System.Drawing.Size(287, 16);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Select table you want to generate data";
+            this.label3.Text = "Select and Edit table you want to generate data";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.dgvSelectTable);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Location = new System.Drawing.Point(104, 156);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(680, 360);
+            this.panel1.TabIndex = 7;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(602, 21);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Select all";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // dgvSelectTable
+            // 
+            this.dgvSelectTable.AllowUserToAddRows = false;
+            this.dgvSelectTable.AllowUserToDeleteRows = false;
+            this.dgvSelectTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSelectTable.Location = new System.Drawing.Point(0, 50);
+            this.dgvSelectTable.Name = "dgvSelectTable";
+            this.dgvSelectTable.Size = new System.Drawing.Size(677, 293);
+            this.dgvSelectTable.TabIndex = 0;
             // 
             // TableConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 562);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(870, 599);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbbGenMethod);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "TableConfig";
             this.Text = "TableConfig";
+            this.Load += new System.EventHandler(this.TableConfig_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSelectTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,13 +142,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ComboBox cbbGenMethod;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvSelectTable;
+        private System.Windows.Forms.Button button2;
     }
 }

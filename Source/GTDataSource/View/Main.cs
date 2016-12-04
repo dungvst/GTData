@@ -15,6 +15,7 @@ namespace GDataSource.View
         public Main()
         {
             InitializeComponent();
+            loadDBType();
         }
 
         private void btnConnect_Click(object sender, EventArgs e)
@@ -22,6 +23,14 @@ namespace GDataSource.View
             this.Hide();
             TableConfig tConfig = new TableConfig();
             tConfig.Show();
+        }
+
+        private void loadDBType()
+        {
+            cbbDBType.Items.Add("PostgreSQL");
+            cbbDBType.Items.Add("MySQL");
+            cbbDBType.Items.Add("SQL Server");
+            cbbDBType.SelectedIndex = 0;
         }
     }
 }
