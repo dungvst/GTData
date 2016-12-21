@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace GDataSource.View
 {
-    public partial class TableConfig : Form
+    public partial class TableConfig : MetroForm
     {
         public TableConfig()
         {

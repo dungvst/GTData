@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MetroFramework.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Windows.Forms;
 
 namespace GDataSource.View
 {
-    public partial class Main : Form
+    public partial class Main : MetroForm
     {
         public Main()
         {
@@ -27,10 +28,15 @@ namespace GDataSource.View
 
         private void loadDBType()
         {
-            cbbDBType.Items.Add("PostgreSQL");
-            cbbDBType.Items.Add("MySQL");
-            cbbDBType.Items.Add("SQL Server");
-            cbbDBType.SelectedIndex = 0;
+            cbbDBType1.Items.Add("PostgreSQL");
+            cbbDBType1.Items.Add("MySQL");
+            cbbDBType1.Items.Add("SQL Server");
+            cbbDBType1.SelectedIndex = 0;
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
