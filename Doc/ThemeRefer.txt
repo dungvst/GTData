@@ -1,0 +1,11 @@
+MaterialSkin
+- https://github.com/IgnaceMaes/MaterialSkin
+- https://www.youtube.com/watch?v=z2i3cQ324g0
+
+MetroForm
+- https://www.nuget.org/packages/MetroModernUI/
+- https://www.youtube.com/watch?v=UG0ztwZjtFw
+
+Krypton
+- https://github.com/ComponentFactory/Krypton
+
