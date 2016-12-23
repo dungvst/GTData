@@ -42,9 +42,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(101, 113);
+            this.label2.Location = new System.Drawing.Point(34, 138);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 13);
+            this.label2.Size = new System.Drawing.Size(122, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Generation method";
             // 
@@ -53,16 +54,18 @@
             this.cbbGenMethod.AllowDrop = true;
             this.cbbGenMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbGenMethod.FormattingEnabled = true;
-            this.cbbGenMethod.Location = new System.Drawing.Point(224, 110);
+            this.cbbGenMethod.Location = new System.Drawing.Point(198, 134);
+            this.cbbGenMethod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbGenMethod.Name = "cbbGenMethod";
-            this.cbbGenMethod.Size = new System.Drawing.Size(157, 21);
+            this.cbbGenMethod.Size = new System.Drawing.Size(208, 24);
             this.cbbGenMethod.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 21);
+            this.label3.Location = new System.Drawing.Point(4, 26);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(287, 16);
             this.label3.TabIndex = 5;
@@ -73,16 +76,18 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.dgvSelectTable);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(104, 156);
+            this.panel1.Location = new System.Drawing.Point(38, 191);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(680, 360);
+            this.panel1.Size = new System.Drawing.Size(976, 355);
             this.panel1.TabIndex = 7;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(602, 21);
+            this.button2.Location = new System.Drawing.Point(872, 26);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 8;
             this.button2.Text = "Select all";
             this.button2.UseVisualStyleBackColor = true;
@@ -92,31 +97,38 @@
             this.dgvSelectTable.AllowUserToAddRows = false;
             this.dgvSelectTable.AllowUserToDeleteRows = false;
             this.dgvSelectTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvSelectTable.Location = new System.Drawing.Point(0, 50);
+            this.dgvSelectTable.Location = new System.Drawing.Point(0, 62);
+            this.dgvSelectTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvSelectTable.Name = "dgvSelectTable";
-            this.dgvSelectTable.Size = new System.Drawing.Size(677, 293);
+            this.dgvSelectTable.Size = new System.Drawing.Size(976, 253);
             this.dgvSelectTable.TabIndex = 0;
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(671, 540);
+            this.metroButton1.Location = new System.Drawing.Point(863, 563);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(113, 36);
+            this.metroButton1.Size = new System.Drawing.Size(151, 44);
             this.metroButton1.TabIndex = 10;
             this.metroButton1.Text = "Generate";
             this.metroButton1.UseSelectable = true;
             // 
             // TableConfig
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(870, 599);
+            this.ClientSize = new System.Drawing.Size(1070, 636);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbbGenMethod);
             this.Controls.Add(this.label2);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "TableConfig";
-            this.Text = "TableConfig";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
+            this.Text = "Config generate data";
             this.Load += new System.EventHandler(this.TableConfig_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

@@ -19,6 +19,19 @@ namespace GDataSource.View
             loadDBType();
         }
 
+        private void loadDBType()
+        {
+            cbbDBType.Items.Add("PostgreSQL");
+            cbbDBType.Items.Add("MySQL");
+            cbbDBType.Items.Add("SQL Server");
+            cbbDBType.SelectedIndex = 0;
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnConnect_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -26,17 +39,9 @@ namespace GDataSource.View
             tConfig.Show();
         }
 
-        private void loadDBType()
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            cbbDBType1.Items.Add("PostgreSQL");
-            cbbDBType1.Items.Add("MySQL");
-            cbbDBType1.Items.Add("SQL Server");
-            cbbDBType1.SelectedIndex = 0;
-        }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }
