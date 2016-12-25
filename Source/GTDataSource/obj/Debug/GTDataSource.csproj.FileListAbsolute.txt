@@ -15,3 +15,17 @@ F:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.View.
 F:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.View.Main.resources
 F:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.View.TableConfig.resources
 F:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GTDataSource.csproj.GenerateResource.Cache
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\bin\Debug\GDataSource.exe.config
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.exe
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.pdb
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\bin\Debug\GDataSource.exe
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\bin\Debug\GDataSource.pdb
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\bin\Debug\MetroFramework.Design.dll
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\bin\Debug\MetroFramework.dll
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\bin\Debug\MetroFramework.Fonts.dll
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GTDataSource.csprojResolveAssemblyReference.cache
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.Properties.Resources.resources
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.View.GenManual.resources
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.View.Main.resources
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GDataSource.View.TableConfig.resources
+E:\Works\GenerateData\Git\GTData\Source\GTDataSource\obj\Debug\GTDataSource.csproj.GenerateResource.Cache

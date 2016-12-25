@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.dgvSelectTable = new System.Windows.Forms.DataGridView();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.btnBack = new MetroFramework.Controls.MetroButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSelectTable)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             this.cbbGenMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbGenMethod.FormattingEnabled = true;
             this.cbbGenMethod.Location = new System.Drawing.Point(198, 134);
-            this.cbbGenMethod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbGenMethod.Margin = new System.Windows.Forms.Padding(4);
             this.cbbGenMethod.Name = "cbbGenMethod";
             this.cbbGenMethod.Size = new System.Drawing.Size(208, 24);
             this.cbbGenMethod.TabIndex = 2;
@@ -77,7 +78,7 @@
             this.panel1.Controls.Add(this.dgvSelectTable);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(38, 191);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(976, 355);
             this.panel1.TabIndex = 7;
@@ -85,7 +86,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(872, 26);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 8;
@@ -98,37 +99,51 @@
             this.dgvSelectTable.AllowUserToDeleteRows = false;
             this.dgvSelectTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSelectTable.Location = new System.Drawing.Point(0, 62);
-            this.dgvSelectTable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSelectTable.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSelectTable.Name = "dgvSelectTable";
             this.dgvSelectTable.Size = new System.Drawing.Size(976, 253);
             this.dgvSelectTable.TabIndex = 0;
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(863, 563);
-            this.metroButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.metroButton1.Location = new System.Drawing.Point(899, 573);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(4);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(151, 44);
+            this.metroButton1.Size = new System.Drawing.Size(115, 34);
             this.metroButton1.TabIndex = 10;
             this.metroButton1.Text = "Generate";
             this.metroButton1.UseSelectable = true;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(764, 573);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(115, 34);
+            this.btnBack.TabIndex = 11;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseSelectable = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // TableConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1070, 636);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cbbGenMethod);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "TableConfig";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
+            this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.DropShadow;
             this.Text = "Config generate data";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TableConfig_FormClosed);
             this.Load += new System.EventHandler(this.TableConfig_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -147,5 +162,6 @@
         private System.Windows.Forms.DataGridView dgvSelectTable;
         private System.Windows.Forms.Button button2;
         private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton btnBack;
     }
 }

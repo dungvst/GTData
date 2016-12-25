@@ -66,5 +66,17 @@ namespace GDataSource.View
             cbbGenMethod.Items.Add("Manual");
             cbbGenMethod.SelectedIndex = 0;
         }
+
+        private void TableConfig_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main main = new Main();
+            main.Show();
+        } 
     }
 }
