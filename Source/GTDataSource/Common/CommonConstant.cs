@@ -8,5 +8,8 @@ namespace GDataSource.Common
 {
     class CommonConstant
     {
+        public static readonly string DB_TYPE_POSTGRES = "POSTGRES";
+        public static readonly string DB_TYPE_SQLSERVER = "SQLSERVER";
+        public static readonly string DB_TYPE_MYSQL = "MYSQL";
     }
 }
