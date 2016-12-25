@@ -1,8 +1,0 @@
-E:\Works\GenerateData\GData\GData\GTDataSource\bin\Release\GDataSource.exe.config
-E:\Works\GenerateData\GData\GData\GTDataSource\bin\Release\GDataSource.exe
-E:\Works\GenerateData\GData\GData\GTDataSource\bin\Release\GDataSource.pdb
-E:\Works\GenerateData\GData\GData\GTDataSource\obj\Release\GTDataSource.csprojResolveAssemblyReference.cache
-E:\Works\GenerateData\GData\GData\GTDataSource\obj\Release\GDataSource.Properties.Resources.resources
-E:\Works\GenerateData\GData\GData\GTDataSource\obj\Release\GTDataSource.csproj.GenerateResource.Cache
-E:\Works\GenerateData\GData\GData\GTDataSource\obj\Release\GDataSource.exe
-E:\Works\GenerateData\GData\GData\GTDataSource\obj\Release\GDataSource.pdb
