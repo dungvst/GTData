@@ -21,7 +21,7 @@ namespace GDataSource.View
 
         private void TableConfig_Load(object sender, EventArgs e)
         {
-            loadGenMethod();
+            init();
             loadDataGrid();
         }
         public void loadDataGrid()
@@ -57,14 +57,62 @@ namespace GDataSource.View
             row.Add("300");
             dgvSelectTable.Rows.Add(row.ToArray());
 
-            
+            //////////////
+
+            // Define columns
+            dgvManual.ColumnCount = 6;
+            dgvManual.Columns[0].Name = "Table 1";
+            dgvManual.Columns[1].Name = "Table 2";
+            dgvManual.Columns[2].Name = "Relation";
+            dgvManual.Columns[3].Name = "Record";
+            dgvManual.Columns[4].Name = "Gid";
+            dgvManual.Columns[5].Name = "Overwrite";
+            dgvManual.Columns[0].ReadOnly = true;
+            dgvManual.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Add checkbox
+            chk = new DataGridViewCheckBoxColumn();
+            chk.HeaderText = "Select";
+            chk.Name = "CheckBox";
+            chk.AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells;
+
+            dgvManual.Columns.Add(chk);
+
+            // Dummy data
+            row = new ArrayList();
+            row.Add("Table1");
+            row.Add("Table2");
+            row.Add("1:n");
+            row.Add("300");
+            row.Add("1234");
+            row.Add("Yes");
+            dgvManual.Rows.Add(row.ToArray());
+
+            //row = new ArrayList();
+            //row.Add("Table2");
+            //row.Add("300");
+            //dgvManual.Rows.Add(row.ToArray());
+
+            //row = new ArrayList();
+            //row.Add("Table3");
+            //row.Add("300");
+            //dgvManual.Rows.Add(row.ToArray());
         }
 
-        private void loadGenMethod()
+        private void init()
         {
             cbbGenMethod.Items.Add("Automatic");
             cbbGenMethod.Items.Add("Manual");
             cbbGenMethod.SelectedIndex = 0;
+
+            cbbOutputType.Items.Add("Insert into DB");
+            cbbOutputType.Items.Add("Excel file");
+            cbbOutputType.Items.Add("SQL file");
+            cbbOutputType.SelectedIndex = 0;
+
+            cbbReset.Items.Add("Default");
+            cbbReset.Items.Add("Clear all");
+            cbbReset.SelectedIndex = 0;
         }
 
         private void TableConfig_FormClosed(object sender, FormClosedEventArgs e)
@@ -77,6 +125,20 @@ namespace GDataSource.View
             this.Hide();
             Main main = new Main();
             main.Show();
+        }
+
+        private void cbbGenMethod_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if ((string)cbbGenMethod.Text == "Manual")
+            {
+                dgvSelectTable.Hide();
+                dgvManual.Show();
+            }
+            else
+            {
+                dgvSelectTable.Show();
+                dgvManual.Hide();
+            }
         } 
     }
 }

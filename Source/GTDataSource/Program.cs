@@ -18,7 +18,7 @@ namespace GDataSource
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new View.Main());
+            Application.Run(new View.TableConfig());
         }
     }
 }
